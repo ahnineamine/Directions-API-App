@@ -26,11 +26,8 @@ Spring Boot REST service with the following two methods:
 * Returns the haversine distance between the from and to coordinates in a json format  
   
 ### Frontend  
-A screen that consists of input fields for the two points (to and from) and a map (google
-maps, leaflet, etc.) and an output label. Clicking to two points on the map in sequence should also
-set them as ```to``` and ```from``` coordinates, respectively. When two points are input, the application
-should call both REST services and display the results: The polyline from getGoogleDirections
-should be drawn on the map, and the two distances should be displayed in a text box.  
+A screen that consists of input fields for the two points (to and from) and a Google map and an output text area. Clicking two points on the map in sequence should also
+set them as ```to``` and ```from``` coordinates, respectively. When two points are input, the application calls both REST services and display the results: The polyline from getGoogleDirections is drawn on the map, and the two distances are displayed in a text area.  
   
 ## How to  
 Running the ```Application.java``` will launch the application, rendering it accessible via port 9000.  
