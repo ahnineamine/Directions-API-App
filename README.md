@@ -32,7 +32,7 @@ set them as ```to``` and ```from``` coordinates, respectively. When two points a
 should call both REST services and display the results: The polyline from getGoogleDirections
 should be drawn on the map, and the two distances should be displayed in a text box.  
   
-### How to  
+## How to  
 Running the ```Application.java``` will launch the application, rendering it accessible via port 9000.  
 Accessing ```http://localhost:9000``` will display the index page.  
   
