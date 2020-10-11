@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <meta name="viewport" content="width=device-width">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+      <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXHLbuGcEMsO5uReok4iMWyNn6JAstprU&libraries=geometry&callback=initMap"></script>
+
+      <link rel="icon" href=".\images\logo.jpg"/>
+      <link rel="stylesheet" href=".\style\style.css">
+      <script type="text/javascript" src="./scripts/script.js"></script>
+  </head>
+  <body>
+      <div id="map"></div>
+      <div id="coordinates" class="form-inline">
+          <label for="from" id="from">From:</label><br>
+          <label for="from">Latitude: </label>
+          <input type="text" class="form-control" id="fromlat" placeholder="Your Latitude..">
+          <label for="from">Longitude: </label>
+          <input type="text" class="form-control" id="fromlong" placeholder="Your Longitude.."><br><br>
+          <label for="to" id="to">to:</label><br>
+          <label for="to">Latitude: </label>
+          <input type="text" class="form-control" id="tolat" placeholder="Your Latitude..">
+          <label for="to">Longitude: </label>
+          <input type="text" class="form-control" id="tolong" placeholder="Your Longitude.."><br><br>
+          <button class="btn btn-primary" type="submit" onclick="return send();"> Submit </button>
+          <button class="btn btn-primary" type="reset" onclick="return reset();"> Reset </button><br><br>
+          <label for="to" id="Distance_calculations">Distance calculations:</label><br>
+          <textarea class="form-control" id="fetched" rows="3" cols="70" readonly></textarea>
+      </div>
+      <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://www.linkedin.com/in/amine-ahnine-79b33b131/"> Ahnine Amine</a>
+        </div>
+      </footer>
+  </body>
+</html>

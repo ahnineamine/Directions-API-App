@@ -1,0 +1,35 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-web-services'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	implementation 'com.google.maps:google-maps-services:0.9.3'
+	implementation 'org.springframework.boot:spring-boot-actuator-autoconfigure'
+	testImplementation 'org.apache.httpcomponents:httpclient'
+	compile 'com.squareup.okhttp3:okhttp:3.4.1'
+	compile 'joda-time:joda-time:2.10.6'
+	testCompile 'junit:junit:4.12'
+	compile 'junit:junit:4.12'
+
+
+}
+
+test {
+	useJUnitPlatform()
+}

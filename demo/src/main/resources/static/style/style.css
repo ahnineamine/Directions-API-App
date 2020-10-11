@@ -1,0 +1,51 @@
+
+
+body {
+    background-color: #424242;
+    color: #424242;
+    background: url('../images/rsz_background.png');
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+  	height: 200px;
+  }
+
+footer {
+    position: fixed;    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00AD78;
+    color: white;
+    text-align: center;
+}
+
+#from,
+#to,
+#Distance_calculations {
+    color: #00AD78;
+    font-size: 100%;
+}
+
+#map {
+    height: 60%;
+    width: 40%;
+    left: 57%;
+    top: 25%;
+    position: absolute;
+    border-radius: 5%;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.8);
+}
+
+#coordinates {
+    position: absolute;
+    left: 4%;
+    top: 25%;
+    background-color: #424242;
+    padding: 1%;
+    height: 60%;
+    width: 48%;
+    border-radius: 2%;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.8);
+}
+
